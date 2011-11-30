@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sand Point Child Development Center | <%= @page_title = @page_class.upcase %></title>
+	<link rel="stylesheet" href="styles.css">
+	<!--[if lt IE 9]>
+	<script src="http:/html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="<%= @page_class %>">
+	<div class="wrap">
+		<header>
+			<a href="home"><img src="logo.png" alt="logo" title="SPCDC Home" /></a>
+			<h1><span class="spc">Sand Point Child</span><span class="dc">Development Center</span></h1>
+		</header>
+		<nav>
+			<ul class="nav">
+				<li><a href="/">home</a></li>
+				<li><a href="/philosophy">philosophy</a></li>
+				<li><a href="/teachers">teachers</a></li>
+				<li><a href="/curriculum">curriculum</a></li>
+				<li><a href="/enrollment">enrollment</a></li>
+				<li class="last"><a href="/directions">directions</a></li>
+			</ul>
+		</nav>
+		<%= yield %>
+		<footer>
+			<p>5837 56th Avenue NE Seattle, WA 98105 | 206.522.2827 | Hours: M - F &nbsp;7:15am - 6pm</p>
+			<p>SPCDC is a non-profit organization (Federal ID: 91-1332055). Donations are tax-deductible to the full extent of the law.</p>
+			<p>a <a href="http://tinyfin.com">Tiny Fin</a> creation</p>
+		</footer>
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-18476991-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<%= @script_include %>
+	</div>
+</body>
+</html>
