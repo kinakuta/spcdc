@@ -1,0 +1,1004 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+/* fonts: HillHouse, DroidSansR, DroidSansBold, MarketingcriptRegular */
+
+/* @font-face */
+
+@font-face {
+    font-family: 'HillHouseMedium';
+    src: url('Hill_House-webfont.eot');
+    src: url('Hill_House-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Hill_House-webfont.woff') format('woff'),
+         url('Hill_House-webfont.ttf') format('truetype'),
+         url('Hill_House-webfont.svg#HillHouseMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('DroidSans-webfont.eot');
+    src: url('DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DroidSans-webfont.woff') format('woff'),
+         url('DroidSans-webfont.ttf') format('truetype'),
+         url('DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('DroidSans-Bold-webfont.eot');
+    src: url('DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DroidSans-Bold-webfont.woff') format('woff'),
+         url('DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* END @font-face */
+
+html { overflow-y: scroll; }
+
+body {
+	color: #494e3f;
+	font-family: DroidSansRegular, Helvetica, Tahoma, sans-serif;
+	font-size: 13px;
+	background-color: #d7d9cd;
+}
+
+.wrap { 
+	width: 960px; 
+	margin: 0 auto;
+}
+
+/* header styles */
+
+header {
+	margin: 10px 0 0 0;
+	overflow: hidden;
+}
+
+header img { 
+	display: inline-block;
+}
+
+header img:hover {
+	-webkit-transform: scale(1.01);
+	-moz-transform: scale(1.01);
+	-o-transform: scale(1.01);
+	transform: scale(1.01);
+}
+
+header h1 {
+	display: inline-block;
+	color: #c3440b;
+	font-family: HillHouseMedium, Tahoma, sans-serif;
+	vertical-align: top;
+	margin: 32px 0 0 21px;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+header span {
+	display: block;
+	margin: 0 0 6px 0;
+}
+
+.spc {
+	font-size: 72px;
+	letter-spacing: 11px;
+}
+
+.dc {
+	font-size: 32px;
+	letter-spacing: 24px
+}
+
+/* END header styles */
+
+/* nav styles */
+
+.nav {
+	width: 864px;
+	margin: 15px 0;
+	padding: 8px 48px;
+	background-color: #dfe8da;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 1px 1px #aeb8a7;
+	-moz-box-shadow: 0px 1px 1px #aeb8a7;
+	box-shadow: 0px 1px 1px #aeb8a7;
+	behavior: url(PIE.htc);
+}
+
+.nav li {
+	display: inline-block;
+	margin: 0 38px 0 0;
+}
+
+.home .nav li:nth-child(1) a { 
+	color: #c3440b;
+	cursor: default; 
+}
+
+.home .nav li:nth-child(1) a:hover { background-color: #dfe8da; }
+
+.philosophy .nav li:nth-child(2) a {
+	color: #c3440b;
+	cursor: default;
+}
+
+.philosophy .nav li:nth-child(2) a:hover { background-color: #dfe9da; }
+
+.teachers .nav li:nth-child(3) a {
+	color: #c3440b;
+	cursor: default;
+}
+
+.teachers .nav li:nth-child(3) a:hover { background-color: #dfe9da; }
+
+.curriculum .nav li:nth-child(4) a {
+	color: #c3440b;
+	cursor: default;
+}
+
+.curriculum .nav li:nth-child(4) a:hover { background-color: #dfe9da; }
+
+.enrollment .nav li:nth-child(5) a {
+	color: #c3440b;
+	cursor: default;
+}
+
+.enrollment .nav li:nth-child(5) a:hover { background-color: #dfe9da; }
+
+.directions .nav li:nth-child(6) a {
+	color: #c3440b;
+	cursor: default;
+}
+
+.directions .nav li:nth-child(6) a:hover { background-color: #dfe9da; }
+
+.nav li.last { margin: 0 0 0 0; }
+
+.nav li a {
+	display: inline-block;
+	color: #494e3f;
+	font-family: DroidSansBold, Helvetica, Tahoma, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 16px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #fff;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition; all .3s ease-in-out;
+	behavior: url(PIE.htc);
+}
+
+.nav li a:hover {
+	color: #c3440b;
+	background-color: #c4c7b8;
+}
+
+/* END nav styles */
+
+/* home page content styles */
+
+img.home {
+	float: left;
+	width: 640px;
+	height: 480px;
+	margin: 0 20px 0 0;
+	border: 14px solid #fff;
+	-webkit-box-shadow: 3px 3px 3px #aeb8a7;
+	-moz-box-shadow: 3px 3px 3px #aeb8a7;
+	box-shadow: 3px 3px 3px #aeb8a7;
+	behavior: url(PIE.htc);
+}
+
+.home h2 { 
+	font-size: 16px;
+	font-weight: bold; 
+	word-spacing: 1.5px;
+	line-height: 20px;
+	margin: 0 0 8px 0;
+}
+
+.about { 
+	margin: 0 10px 0 0;
+	padding: 8px 0 0 0;
+}
+
+.about p {
+	margin: 0 0 12px 0;
+	word-spacing: 2px;
+	line-height: 17px;
+}
+
+.about a,
+.section_link,
+.monthly_tuition a,
+.waitlist_info a,
+.g_directions a {
+	color: #c3440b;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1px 3px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.about a:hover,
+.section_link:hover,
+.monthly_tuition a:hover,
+.waitlist_info a:hover,
+.g_directions a:hover {
+	color: #d7d9cd;
+	background-color: #c3440b;
+}
+
+a[href^=mailto] {
+	padding: 1px 3px 1px 23px;
+	background: url(email.gif) no-repeat 3px center;
+}
+
+.about a[href^=mailto]:hover {
+	color: #d7d9cd;
+	background: #c3440b url(email.gif) no-repeat 3px center;
+	padding: 1px 3px 1px 23px;
+}
+
+a[href$=".pdf"] {
+	background: url(acrobat.png) no-repeat 98% top;
+	padding: 1px 20px 1px 3px
+}
+
+a[href$=".pdf"]:hover {
+	background: #c3440b url(acrobat.png) no-repeat 98% top;
+	padding: 1px 20px 1px 3px
+}
+
+a.cta {
+	display: inline-block;
+	color: #c3440b;
+	font-family: HillHouseMedium, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	background-color: #c4c7b8;
+	margin: 30px 0 0 0;
+	padding: 16px 16px 10px 16px;
+	border: 1px solid #494e3f;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+a.cta:hover {
+	color: #c4c7b8;
+	background: #c3440b;
+}
+
+/* END home page content styles */
+
+/* philosophy page styles */
+
+.philosophy section { 
+	position: relative; 
+	width: 950px;
+	margin: 0 auto 15px auto;
+}
+
+.philosophy h2 {
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 18px;
+	margin: 0 0 20px 0;
+}
+
+.philosophy p, .philosophy section ul {
+	word-spacing: 2px;
+	line-height: 19px;
+}
+
+.philosophy section ul { 
+	list-style: square outside;
+	margin: 10px 0 0 0;
+	padding: 0 13px 0 13px;
+}
+
+.overlay { 
+	position: absolute;
+	color: #dfe8da;
+	background-color: #494e3f;
+	background-color: rgba(73, 78, 63, 0.9);
+	padding: 25px 15px 0 16px;
+	height: 475px;
+}
+
+.philosophy section img { 
+	-webkit-box-shadow: 3px 3px 3px #aeb8a7;
+	-moz-box-shadow: 3px 3px 3px #aeb8a7;
+	box-shadow: 3px 3px 3px #aeb8a7;
+	behavior: url(PIE.htc);
+}
+
+.growing .overlay,
+.community .overlay {
+	width: 245px;
+	top: 0;
+	right: 0;
+}
+
+.activities .overlay {
+	width: 260px;
+	top: 0;
+}
+
+.philosophy a.cta {
+	position: absolute;
+	bottom: 25px;
+	left: 50px;
+	width: 144px;
+	margin: 0 auto;
+	line-height: 24px;
+	border-color: #c3440b;
+}
+
+/* END philosophy page styles */
+
+/* teachers page styles */
+
+.bio {
+	width: 345px;
+	color: #dfe8da;
+	background-color: #575c4e;
+	word-spacing: 2px;
+	line-height: 18px;
+	margin: 0 0 5px 0;
+	padding: 20px 20px 20px 15px;
+}
+
+.first h2 { margin: 0 0 15px 0; }
+
+.bio h2 {
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+.bio h3 {
+	color: #aeb8a7;
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 14px;
+	margin: 0 0 15px 0;
+}
+
+.staff img {
+	float: right;
+	margin: 0 0 5px 0;
+	border: 15px solid #575c4e;
+}
+
+.next {
+	float: right;
+	width: 545px;
+	background-color: #575c4e;
+	margin: 0 0 15px 0;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.next p {	
+	color: #dfe8da;
+	font-size: 16px;
+	font-style: italic;
+	margin: 15px 15px 10px 15px; 
+	text-align: center;
+}
+
+.next .author {
+	float: right;
+	font-style: normal;
+	font-size: 14px;
+}
+
+.teachers .cta { 
+	float: right;
+	width: 140px;
+	line-height: 24px;
+	margin: 0 0 0 15px;
+	border: 1px solid #c3440b; 
+}
+
+/* END teachers page styles */
+
+/* curriculum enrichment styles */
+
+.enrichments { 
+	position: relative;
+	height: 720px;
+	background: url(outside.jpg) no-repeat;
+}
+
+.content_wrap {
+	position: absolute;
+	left: 0;
+	width: 285px;
+	height: 700px;
+	color: #dfe8da;
+	background-color: #494e3f;
+	background-color: rgba(73, 78, 63, 0.9);
+	padding: 20px 15px 0 15px;
+}
+
+.enrichments h2 {
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+}
+
+.sections {
+	width: auto;
+	margin: 0 auto;
+}
+
+.section {
+	color: #dfe8da;
+	background-color: #c3440b;/*#aeb8a7;*/
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	display: block;
+	margin: 0 0 6px 0;
+	padding: 5px 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.section:hover {
+	color: #c3440b;
+	background-color: #dfe8da;
+}
+
+.ces h3 {
+	width: 240px;
+	color: #dfe8da;
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 15px;
+	margin: 0 0 10px 0;
+}
+
+.tuition {
+	font-size: 13px;
+}
+
+.enrichments h4 {
+	color: #aeb8a7;
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 13px;
+	margin: 0 0 6px 0;
+}
+
+.enrichments ul {
+	color: #aeb8a7;
+	line-height: 17px;
+	margin: 0 0 15px 0;
+}
+
+.schedule { 
+	display: inline-block; 
+	width: 76px;
+}
+
+.ces p {
+	color: #dfe8da;
+	margin: 0 0 12px 0;
+	word-spacing: 2px;
+	line-height: 17px;
+}
+
+.viewport section {
+	height: 480px;
+	margin: 0 0 15px 0;
+}
+
+.viewport {
+	height: 480px;
+	overflow: hidden;
+}
+
+.curriculum .cta {
+	position: absolute;
+	left: 70px;
+	bottom: 15px;
+	width: 139px;
+	border: 1px solid #c3440b;
+	text-align: center;
+}
+
+div .accordion {
+	display: none;
+	height: auto;
+}
+
+/* END curriculum enrichment styles */
+
+/* enrollment page styles */
+
+img.enrollment {
+	float: left;
+	width: 640px;
+	height: 480px;
+	margin: 0 6px 0 0;
+	border: 14px solid #fff;
+	-webkit-box-shadow: 3px 3px 3px #aeb8a7;
+	-moz-box-shadow: 3px 3px 3px #aeb8a7;
+	box-shadow: 3px 3px 3px #aeb8a7;
+	behavior: url(PIE.htc);
+}
+
+.wait_list_application { 
+	width: 270px;
+	display: inline-block;
+	color: #575c4e;
+	margin: 0 0 15px 15px;
+	padding: 5px 0 20px 0;
+	line-height: 19px;
+}
+
+.wait_list_application h2 {
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0 0 10px 0;
+}
+
+.address {
+	width: 234px;
+	color: #575c4e;
+	background: #c4cfb0 url(table_bg.jpg) bottom repeat-x;
+	margin: 10px 0;
+	padding: 8px 14px;
+	border: 1px solid #dfe8da;
+}
+
+.wait_list_application ol {
+	width: 200px;
+	font-style: italic;
+	list-style: decimal outside;
+	margin: 5px 0;
+	padding: 0 30px;
+}
+
+.priority { font-style: normal; }
+
+.enrollment .cta {
+	display: inline-block;
+	margin: 35px 0 0 6px;
+}
+
+table { margin: 0 0 20px 0; }
+
+caption {
+	position: relative;
+	right: 6px;
+	color: #c3440b;
+	font-size: 14px;
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	text-align: right;
+	margin: 0 3px 0 0;
+	padding: 0 0 8px 0;
+}
+
+.sizes_openings table { width: 960px; }
+
+.monthly_tuition table,
+.drop_in_fees  table { width: 470px; }
+
+th {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-right: 1px solid #dfe8da;
+	border-bottom: 1px solid #dfe8da;
+	border-top: 1px solid #dfe8da;
+	letter-spacing: 2px;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #c4cfb0 url(table_bg.jpg) repeat-x;
+}
+
+.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #dfe8da;
+	background: none;
+}
+
+td {
+	border-right: 1px solid #dfe8da;
+	border-bottom: 1px solid #dfe8da;
+	background-color: #ebf5e5;
+	padding: 6px 6px 6px 12px;
+}
+
+.class_size { text-align: center; }
+
+.cost { text-align: right; }
+
+.alt td { background-color: #f8fff5; }
+
+.monthly_tuition, .drop_in_fees { 
+	float: left;
+}
+
+.monthly_tuition { 
+	margin: 0 20px 0 0; 
+}
+
+.monthly_tuition table { margin: 0; }
+
+.monthly_tuition p {
+	font-size: 12px;
+	margin: 5px 0 20px 5px;
+}
+
+.footnote { color: #c3440b; }
+
+.half_days {
+	font-size: 10px;
+	margin: 5px 0 0 5px;
+}
+
+/* END enrollment page styles */
+
+/* directions page styles */
+
+.directions_info {
+	background-color: #575c4e;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.instructions {
+	float: left;
+	width: 300px;
+	color: #dfe8da;
+	line-height: 19px;
+}
+
+.instructions h2 {
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 16px;
+	margin: 0 0 10px 0;
+}
+
+.instructions h3 {
+	font-family: DroidSansBold, Tahoma, sans-serif;
+	font-size: 14px;
+	margin: 0 0 6px 0;
+}
+
+.instructions p { margin: 0 0 10px 0; }
+
+.direction_from { 
+	color: #aeb8a7;
+	font-weight: bold; 
+}
+
+.note { font-weight: bold; }
+
+#map {
+	float: right;
+	width: 600px;
+	height: 540px;
+	margin: 5px 5px 0 0;
+	border: 6px solid #dfe8da;
+	-webkit-box-shadow: 3px 3px 3px #494e3f;;
+	-moz-box-shadow: 3px 3px 3px #494e3f;;
+	box-shadow: 3px 3px 3px #494e3f;;
+	behavior: url(PIE.htc);
+}
+
+.g_directions {
+	float: left;
+	color: #dfe8da;
+	margin: 20px 0 0 150px;
+}
+
+.g_directions a { text-transform: uppercase; }
+
+/* END directions page styles */
+
+/* footer styles */
+
+footer { 
+	clear: both;
+	margin: 20px 0 20px 0; 
+}
+
+footer p {
+	font-size: 11px;
+	text-align: center;
+	line-height: 15px;
+}
+
+footer p:last-child {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+footer a {
+	color: #969693;
+	font-family: DroidSansBold, Helvetica, Tahoma, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+footer a:hover { color: #ee9e10; }
+
+/* END footer styles */
+
+/* contact page styles */
+
+.contact {
+	font-size: 16px;
+}
+
+.contact .wrap { width: 540px; }
+
+.contact h1 { margin: 25px 0 25px 0; }
+
+.contact h2 {
+	margin: 0 0 20px 0;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.contact span { 
+	display: block; 
+	text-align: center;
+}
+.contact .spc {
+	color: #c3440b;
+	font-family: HillHouseMedium, Tahoma, sans-serif;
+	font-size: 49px;
+	letter-spacing: 8px;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.contact .dc {
+	color: #c3440b;
+	font-family: HillHouseMedium, Tahoma, sans-serif;
+	font-size: 24px;
+	letter-spacing: 15px;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.contact form { 
+	margin: 0 0 0 10px; 
+}
+
+.input_field {
+	margin: 0 0 10px 0;
+}
+
+.contact label{
+	display: inline-block;
+	width: 60px;
+	margin: 0 10px 0 0;
+	text-align: right;
+}
+
+.contact input[type=text] {
+	width: 400px;
+	padding: 4px;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px dotted #dfe8da;
+	background-color: #fffffa;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.contact input[type=submit] {
+	margin: 0 0 0 75px;
+	color: #4c4c4c;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 6px 12px;
+}
+
+/* END contact page styles */
+
+/* confirmation page styles */
+
+.confirmation .wrap { width: 600px; }
+
+.confirmation p {
+	margin: 120px 0 40px 0;
+	font-size: 24px;
+	text-align: center;
+}
+
+.button { text-align: center; }
+
+.confirmation a {
+	display: inline-block;
+	width: 160px;
+	padding: 8px 16px 4px 16px;
+	border: 1px solid #494E3F;
+	background-color: #C4C7B8;
+	color: #c3440b;
+	font-family: HillHouseMedium, Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.confirmation a:hover {
+	background-color: #c3440b;
+	color: #c4c7b8;
+}
+
+/* END confirmation page styles */
+
+/* 404 page styles */
+
+.not_found .wrap { width: 740px; }
+
+.not_found h1 {
+	float: left;
+	margin: 100px 20px 20px 0;
+	color: #C3440B;
+	font-family: HillHouseMedium, Tahoma, sans-serif;
+	font-size: 160px;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.not_found h2 {
+	float: left;
+	margin: 140px 0 0 0;
+	font-family: HillHouseMedium, Tahoma, sans-serif;
+	font-size: 60px;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	-moz-text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+
+.not_found ul { 
+	margin: 40px auto 0 auto; 
+	padding: 20px 10px;
+	background-color: #dfe8da;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 1px 1px #aeb8a7;
+	-moz-box-shadow: 0px 1px 1px #aeb8a7;
+	box-shadow: 0px 1px 1px #aeb8a7;
+	behavior: url(PIE.htc);
+}
+
+.not_found ul li { 
+	display: inline-block; 
+	margin: 0 3px 0 0;
+}
+
+.not_found p { 
+	clear: left;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.not_found a {
+	padding: 8px 16px;
+	color: #494e3f;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.not_found a:hover {
+	color: #c3440b;
+	background-color: #c4c7b8;
+}
+
+/* END 404 page styles */
