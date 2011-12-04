@@ -62,6 +62,19 @@ post '/contact' do
   @page_class = 'confirmation'
   @page_title = 'Thank You'
   
+  Pony.options = {
+    :via => :smtp,
+    :via_options =>{
+      :address =>'smtp.sendgrid.net',
+      :port => '587',
+      :domain => 'heroku.com',
+      :user_name =>ENV['SENDGRID_USERNAME'],
+      :password => ENV['SENDGRID_PASSWORD'],
+      :authentication => :plain,
+      :enable_starttls_auto => true
+    }
+  }
+  
   Pony.mail :to => 'kinakuta.james@hotmail.com',
             :from => params[:email],
             :subject => "Waitlist application for #{params[:name]}",
